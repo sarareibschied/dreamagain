@@ -29,7 +29,9 @@ class NewVisitorTest(unittest.TestCase):
     def test_home_page(self):
         """
 
-        Put your description of the purpose of your web site here.
+        Explore how the ML-DA circuit uses dreams
+        to channel an individual's unconscious desires
+        and motivate gratification strategies.
 
         """
 
@@ -38,7 +40,7 @@ class NewVisitorTest(unittest.TestCase):
         # there is a page title defined by <title></title> on the home page
         # check it
 
-        self.assertIn('The Title of my Web Site',self.browser.title)
+        self.assertIn('Bridging the Gap to Reality',self.browser.title)
 
         # You will have an image for your home page I am assuming.
         # Put the name of your image here in place of homebrew.png
@@ -52,7 +54,7 @@ class NewVisitorTest(unittest.TestCase):
         # put your title in place of "The Title of My Home Page"
 
         h=self.browser.find_element_by_css_selector('h1')
-        self.assertIn("The Title of My Home Page",h.text)
+        self.assertIn("Bridging the Gap to Reality",h.text)
 
         # There is an area specified around the computer keyboard.
         # the 'id' of this area is 'keyboard'
